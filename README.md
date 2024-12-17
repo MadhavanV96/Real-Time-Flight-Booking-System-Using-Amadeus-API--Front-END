@@ -1,4 +1,7 @@
 # Flight Booking and Reservation System
+It is deployed using Netlify
+[Front End Deployment URL](https://bookyourticketguvi.netlify.app/)
+
 ## Overview
 This project is a comprehensive Flight Booking and Reservation System designed to allow users to search for flights, compare prices, manage bookings, handle payments, receive booking confirmations, and get real-time flight updates. It integrates with airline databases, provides a user account system, and includes payment processing functionalities.
 
@@ -80,3 +83,13 @@ Tech Stack
 **Amadeus API**
 Authentication:
 JWT Authentication for user login and session management
+
+
+
+For more information kindly refer the Backend Code and Documentation
+
+[Backend Code](https://github.com/MadhavanV96/Real-Time-Flight-Booking-System-Using-Amadeus-API--Server-Side.git)
+It is deployed using render.com
+[Backend Deployement URL](https://real-time-flight-booking-system-using.onrender.com)
+API Documentation using the Postman
+[Postman Documentation](https://documenter.getpostman.com/view/38692959/2sAYHzHiPZ)
