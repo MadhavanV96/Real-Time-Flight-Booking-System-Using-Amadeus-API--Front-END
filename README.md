@@ -23,7 +23,7 @@ Flight Reservation: Users can select flights, choose seat preferences, and make 
 
 
 
-![Home Screen Search](../Images/Home%20Screen%20Search.png)
+![Home Screen Search](./Images/Home%20Screen%20Search.png)
 
 
 
@@ -40,14 +40,14 @@ Secure Payments: Integration with secure payment gateways (RazorPay) to handle t
 Payment Methods: Support for various payment methods, including credit/debit cards, digital wallets, and bank transfers.
 Instant Confirmation: Immediate confirmation of successful transactions.
 
-![Payment Integration](../Images/Payment%20Integrationi.png)
+![Payment Integration](./Images/Payment%20Integrationi.png)
 
 
 ## 4. Booking Confirmations and Notifications
 Confirmation Emails/SMS: Send booking confirmations with flight details, booking reference, and payment receipt.
 Automated Notifications: Notify users about flight status changes, upcoming flights, and reminders.
 
-![Email  Confirmation](../Images/Email%20SS.png)
+![Email  Confirmation](./Images/Email%20SS.png)
 
 
 ## 5. Real-Time Flight Updates [Amadeus API]
@@ -59,7 +59,7 @@ Real-Time Data: Ensure the system can handle real-time updates from airlines to 
 ## 7. User Accounts and Profiles
 User Authentication: Users can create and manage accounts, and securely log in to access their booking history and personal information.
 Profile Management: Users can save preferences, view booking history, and update personal information.
-![Account   Creation ](../Images/Registration%20of%20User.png)
+![Account   Creation ](./Images/Registration%20of%20User.png)
 
 ## 8. User Interface
 Intuitive Design: A user-friendly interface designed using TailwindCSS for searching flights, booking, and managing reservations.
