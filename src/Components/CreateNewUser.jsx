@@ -33,7 +33,7 @@ const CreateNewUser = ({ setTravelerState }) => {
 
     try {
       const response = await axios.post(
-        'http://localhost:3001/api/v1/customer-register',
+        'https://real-time-flight-booking-system-using.onrender.com/api/v1/customer-register',
         {...travelerInfo},
         {
           withCredentials: true,

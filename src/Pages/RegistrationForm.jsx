@@ -23,7 +23,7 @@ const RegistrationForm = () => {
       if((password=='')||(password!=reEnteredpassword)) return alert("Pleasse Enter same password in both fields");
 
       axios
-      .post("http://localhost:3001/api/v1/userRegister", { "name":name,"email": email,"password": password })
+      .post("https://real-time-flight-booking-system-using.onrender.com/api/v1/userRegister", { "name":name,"email": email,"password": password })
       .then((response) => {
         console.log("Registration successful:", response.data.message);
         alert("User Created Successfully. Now You can login with those credintials");

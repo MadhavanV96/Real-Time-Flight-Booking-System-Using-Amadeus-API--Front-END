@@ -20,7 +20,7 @@ const OpenTickets = () => {
 
     const fetchTickets = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/v1/tickets', {
+        const response = await axios.get('https://real-time-flight-booking-system-using.onrender.com/api/v1/tickets', {
           withCredentials: true,
         });
         setTickets(response.data.tickets || []);

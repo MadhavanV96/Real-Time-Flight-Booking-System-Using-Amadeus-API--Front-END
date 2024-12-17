@@ -16,7 +16,7 @@ const LoginModal = ({ closeModal, setUser }) => {
 
     axios
       .post(
-        'http://localhost:3001/api/v1/login',
+        'https://real-time-flight-booking-system-using.onrender.com/api/v1/login',
         { email, password },
         { withCredentials: true }
       )

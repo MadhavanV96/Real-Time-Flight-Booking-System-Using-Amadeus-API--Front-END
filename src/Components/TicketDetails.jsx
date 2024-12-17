@@ -21,7 +21,7 @@ const TicketDetails = () => {
         console.log("Fetching Ticket Details");
 
         // Send ticketID as part of the request body
-        const response = await axios.post('http://localhost:3001/api/v1/getTickets', 
+        const response = await axios.post('https://real-time-flight-booking-system-using.onrender.com/api/v1/getTickets', 
           { ticketID }, // Send ticketID in the body as expected by your backend
           { withCredentials: true } // Ensure credentials are included for authentication
         );

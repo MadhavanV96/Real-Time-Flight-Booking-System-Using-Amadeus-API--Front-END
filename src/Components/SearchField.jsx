@@ -15,7 +15,7 @@ const SearchField = () => {
     const [tripType, setTripType] = useState("Return");
     const [flightResults, setFlightResults] = useState([]); // Store flight results
     const [isLoading, setIsLoading] = useState(false); // Loading state
-    const apiUrl = `http://localhost:3001/api/v1/flights`;
+    const apiUrl = `https://real-time-flight-booking-system-using.onrender.com/api/v1/flights`;
 
     function formatDuration(duration) {
         // Regular expression to match hours and minutes

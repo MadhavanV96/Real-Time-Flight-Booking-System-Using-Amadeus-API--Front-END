@@ -16,7 +16,7 @@ const AddExistingUser = ({ setTravelerState, flight, user }) => {
 
     const fetchCustomers = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/v1/customerInfo', { withCredentials: true });
+        const response = await axios.get('https://real-time-flight-booking-system-using.onrender.com/api/v1/customerInfo', { withCredentials: true });
         const transformedCustomers = response.data.map((customer, index) => ({
           id: index + 1, // Add the id (starting from 1)
           ...customer.travelerInfo, // Flatten travelerInfo and include it directly
@@ -66,7 +66,7 @@ const AddExistingUser = ({ setTravelerState, flight, user }) => {
   const paymentHandler = async () => {
     const paymentData = { amount: 100, currency: 'INR', receipt: 'receiptID' };
     try {
-      const paymentResponse = await axios.post('http://localhost:3001/api/v1/payment', paymentData, {
+      const paymentResponse = await axios.post('https://real-time-flight-booking-system-using.onrender.com/api/v1/payment', paymentData, {
         headers: { 'Content-Type': 'application/json' },
       }, { withCredentials: true });
       console.log('Payment response:', paymentResponse.data.id);
@@ -128,7 +128,7 @@ const AddExistingUser = ({ setTravelerState, flight, user }) => {
       console.log(sendResponse);
       paymentHandler();
       console.log('Logging this...');
-      const response = await axios.post('http://localhost:3001/api/v1/placeOrder', sendResponse, { withCredentials: true });
+      const response = await axios.post('https://real-time-flight-booking-system-using.onrender.com/api/v1/placeOrder', sendResponse, { withCredentials: true });
       console.log('Order response:', response.data);
 
       if (response.status === 200) {

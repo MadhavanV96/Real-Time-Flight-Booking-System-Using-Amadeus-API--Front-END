@@ -13,7 +13,7 @@ const LoginButton = () => {
   // Function to check login status
   const checkLoginStatus = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/api/v1/check-login", {
+      const response = await axios.get("https://real-time-flight-booking-system-using.onrender.com/api/v1/check-login", {
         withCredentials: true, // Include cookies in the request
       });
       if (response.data.loggedIn) {

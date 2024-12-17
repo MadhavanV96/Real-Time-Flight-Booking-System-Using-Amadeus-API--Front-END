@@ -14,7 +14,7 @@ const LoginPage = () => {
   // const navigate = useNavigate(); // React Router navigate function
   const checkLoginStatus = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/api/v1/check-login", {
+      const response = await axios.get("https://real-time-flight-booking-system-using.onrender.com/api/v1/check-login", {
         withCredentials: true, // Include cookies in the request
       });
       if (response.data.loggedIn) {
@@ -48,7 +48,7 @@ const LoginPage = () => {
   
     axios
       .post(
-        'http://localhost:3001/api/v1/login',
+        'https://real-time-flight-booking-system-using.onrender.com/api/v1/login',
         { email, password },
         { withCredentials: true } // Include cookies in the request
       )
